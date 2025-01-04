@@ -1,10 +1,15 @@
-﻿namespace CarDecisionApp.Tests
+﻿using CarDecisionApp.DecisionModule;
+using CarDecisionApp.Models;
+
+namespace CarDecisionApp.Tests
 {
     [TestClass]
     public class CarDecisionModuleTests
     {
+        // Deze test kijkt of de methode GetHighPerformanceCars werkt door auto's te kiezen
+        // met genoeg pk (paardenkracht) boven een bepaalde grens.
         [TestMethod]
-        public void TestMethod1()
+        public void GetHighPerformanceCars_retunsCorrct_whenHorsePowerIsMet()
         {
             //dit is om een beetje te denken hoe ik mijn code ga schrijven
             var decisionModule = new CarDecisionModule();
@@ -14,10 +19,20 @@
                 new CarModel { Name = "Model B", Horsepower = 100 }
             };
 
-            var result = decisionModule.getBestCar(cars, 120);
+            var result = decisionModule.GetHighPerformanceCars(cars, 120);
 
             Assert.AreEqual(1, result.Count);
             Assert.AreEqual("Model A", result[0].Name);
+        }
+
+        // Deze test controleert of de methode GetHighPerformanceCars een foutmelding geeft
+        // als je een negatieve waarde invult voor paardenkracht (pk).
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentException))]
+        public void GetHighPerformanceCars_ThrowsException_whenHorsepowerIsNegative()
+        {
+            var decisionModule = new CarDecisionModule();
+            decisionModule.GetHighPerformanceCars(new List<CarModel>(), -10);
         }
     }
 }
