@@ -18,6 +18,8 @@ namespace CarDecisionApp.Tests
         // 1 = https://www.damirscorner.com/blog/posts/20231222-MockingHttpClientInUnitTests.html#:~:text=If%20you're%20using%20Moq,(%20%22SendAsync%22%2C%20ItExpr.
         // 2 = https://code-maze.com/csharp-mock-httpclient-with-unit-tests/
 
+        //wat ben ik hier aan testen ??? ik doe het volgende, de mock verteld de handler dat als die de http aanvraagt dat hij altijd OK gaat terug sturen, we zijn zzogezegd niet echt de api aan roepen maar
+        // we zijn de code eigenlijk aan testen
         [TestMethod]
         public async Task GetAllCarModelsAsync_ReturnsCorrectModels()
         {
