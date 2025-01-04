@@ -11,6 +11,8 @@ namespace CarDecisionApp.DecisionModule
     {
         public List<CarModel> GetHighPerformanceCars(List<CarModel> cars, int minHorsepower)
         {
+            //kleine error handeling hier :=>
+            if (minHorsepower < 0) throw new ArgumentException("horse power needs to be a positive number");
             return cars.Where(car => car.Horsepower >= minHorsepower).ToList();
         }
     }
