@@ -21,6 +21,10 @@
     <PackageReference Include="Microsoft.Testing.Extensions.TrxReport" Version="1.4.0" />
     <PackageReference Include="Moq" Version="4.20.72" />
     <PackageReference Include="MSTest" Version="3.6.1" />
+    <PackageReference Include="SpecFlow" Version="3.9.74" />
+    <PackageReference Include="SpecFlow.MsTest" Version="3.9.74" />
+    <PackageReference Include="SpecFlow.Tools.MsBuild.Generation" Version="3.9.74" />
+    <PackageReference Include="Xunit.Gherkin.Quick" Version="4.5.0" />
   </ItemGroup>
 
   <ItemGroup>

@@ -12,6 +12,9 @@ namespace CarDecisionApp.DecisionModule
     {
         private readonly ILogger _logger;
 
+        public CarDecisionModule()
+        { }
+
         public CarDecisionModule(ILogger logger)
         {
             _logger = logger;
