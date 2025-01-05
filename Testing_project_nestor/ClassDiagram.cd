@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Alphabetical">
+  <Class Name="CarDecisionApp.DecisionModule.CarDecisionModule" Collapsed="true">
+    <Position X="5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DecisionModule\CarDecisionModule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CarDecisionApp.Models.CarBrand" Collapsed="true">
+    <Position X="3" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIACAQAAAAAAgAAIAAAAAAQAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\CarBrand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CarDecisionApp.Models.CityInfo" Collapsed="true">
+    <Position X="5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAIAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\CarBrand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CarDecisionApp.Models.CarModel" Collapsed="true">
+    <Position X="1.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAABAAAAQAAIAIAAAQAAAAAgAAAEQAAAAAQgAA=</HashCode>
+      <FileName>Models\CarModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CarDecisionApp.Services.CarBrandApi" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="3" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEABAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\CarBrandApi.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CarDecisionApp.Services.CarModelApi" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="1.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACBAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\CarModelApi.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CarDecisionApp.Services.FileLogger" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAAAAIAgIAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Services\FileLogger.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="CarDecisionApp.Interfaces.ICarBrandApi" Collapsed="true">
+    <Position X="3.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\ICarBrandApi.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CarDecisionApp.Interfaces.ICarModelApi" Collapsed="true">
+    <Position X="1.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\ICarModelApi.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CarDecisionApp.Interfaces.ILogger" Collapsed="true">
+    <Position X="5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAAAAIAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\ILogger.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
