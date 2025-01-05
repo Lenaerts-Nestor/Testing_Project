@@ -83,3 +83,12 @@ Dit project volgt de Test-Driven Development (TDD) aanpak en bevat unit tests, i
 5. Logs worden geschreven naar `application.log` in de applicatiemap.
 
 ---
+## **Klassen Diagram**
+Het onderstaande diagram toont de relaties tussen de belangrijkste componenten van CarDecisionApp:
+
+1. **Interfaces**:
+   - `ICarModelApi` en `ICarBrandApi` definiëren de contracten voor het ophalen van automodellen en -merken.
+2. **Implementaties**:
+   - `CarModelApi` implementeert `ICarModelApi` en bevat de logica om automodellen op te halen.
+   - `CarBrandApi` implementeert `ICarBrandApi` en bevat de logica om automerken op te halen.
+
