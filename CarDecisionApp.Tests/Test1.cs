@@ -1,5 +1,6 @@
 ﻿using CarDecisionApp.DecisionModule;
 using CarDecisionApp.Models;
+using Microsoft.VisualStudio.TestPlatform.ObjectModel.Client;
 
 namespace CarDecisionApp.Tests
 {
@@ -12,7 +13,8 @@ namespace CarDecisionApp.Tests
         public void GetHighPerformanceCars_retunsCorrct_whenHorsePowerIsMet()
         {
             //dit is om een beetje te denken hoe ik mijn code ga schrijven
-            var decisionModule = new CarDecisionModule();
+            var logger = new TestLogger();
+            var decisionModule = new CarDecisionModule(logger);
             var cars = new List<CarModel>
             {
                 new CarModel { Name = "Model A", Horsepower = 150 },
@@ -31,7 +33,8 @@ namespace CarDecisionApp.Tests
         [ExpectedException(typeof(ArgumentException))]
         public void GetHighPerformanceCars_ThrowsException_whenHorsepowerIsNegative()
         {
-            var decisionModule = new CarDecisionModule();
+            var logger = new TestLogger();
+            var decisionModule = new CarDecisionModule(logger);
             decisionModule.GetHighPerformanceCars(new List<CarModel>(), -10);
         }
     }
