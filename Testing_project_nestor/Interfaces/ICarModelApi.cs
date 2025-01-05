@@ -10,5 +10,7 @@ namespace CarDecisionApp.Interfaces
     public interface ICarModelApi
     {
         Task<List<CarModel>> GetAllCarModelsAsync();
+
+        Task<List<CarModel>> GetAllCarModelsAsyncMoock();
     }
 }

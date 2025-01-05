@@ -28,5 +28,11 @@ namespace CarDecisionApp.Services
             var response = await _httpClient.GetFromJsonAsync<List<CarModel>>("https://sampleapis.assimilate.be/car-models");
             return response ?? new List<CarModel>();
         }
+
+        public async Task<List<CarModel>> GetAllCarModelsAsyncMoock()
+        {
+            var response = await _httpClient.GetFromJsonAsync<List<CarModel>>("/car-models");
+            return response ?? new List<CarModel>();
+        }
     }
 }
